@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && shx cp -r dist/client/* dist/ && shx rm -rf dist/server dist/client",
+    "build": "vite build && shx cp -r dist/client/* dist/ && shx rm -rf dist/server dist/client && node generate-index.js",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
